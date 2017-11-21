@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  transition: .2s;
+  font-weight: 400; }
+
+html {
+  font-family: "Helvetica";
+  line-height: 1.5;
+  height: 100%; }
+
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  height: 100%; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+input {
+  border: none; }
+  input:focus {
+    outline: none; }
+
+button:focus, button:active {
+  outline: none; }
+
+strong {
+  font-weight: bold; }
+
+.button {
+  background-color: #AA5139;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 8px;
+  padding: 10px 15px;
+  border-radius: 3px; }
+  .button_primary {
+    text-decoration: none; }
+
+.link {
+  text-decoration: none; }
+  .link_primary {
+    color: #AA5139; }
+
+.global-nav {
+  background-color: #AA5139;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .global-nav__logo {
+    align-self: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 0 20px; }
+
+.menu_inline {
+  display: flex;
+  flex-direction: row; }
+
+.menu__link {
+  color: #FFFFFF;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  transition: background-color .2s ease; }
+  .menu__link.active, .menu__link:hover {
+    background-color: #802B15; }
+
+.container {
+  padding: 30px; }
+  .container_main {
+    padding: 0; }
+  .container_page {
+    margin: 0 auto;
+    max-width: 1224px; }
+
+.hero-image__container {
+  background-image: url("/assets/images/tree.jpg");
+  height: calc(100vh - 64px);
+  position: relative;
+  overflow: hidden; }
+
+.hero-image__overlay {
+  height: 100%;
+  background-color: rgba(155, 155, 155, 0.9); }
+
+.usage {
+  text-align: center; }
+  .usage__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .usage__description {
+    color: white;
+    margin: 8px;
+    white-space: nowrap; }
+  .usage__input {
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+    min-width: 250px;
+    text-align: center;
+    border-radius: 3px; }
+  .usage__social {
+    padding: 8px; }
+  .usage_main {
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    left: 50%;
+    top: 50%; }
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/*
+
+Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
+
+*/
+.markdown > pre > code {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #FAFAFA;
+  color: #000000;
+  border: 1px solid #AA5139;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  line-height: 1.5; }
+
+.hljs-comment,
+.hljs-quote,
+.hljs-variable {
+  color: #008000; }
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag {
+  color: #00f; }
+
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-addition {
+  color: #a31515; }
+
+.hljs-deletion,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-meta {
+  color: #2b91af; }
+
+.hljs-doctag {
+  color: #808080; }
+
+.hljs-attr {
+  color: #f00; }
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #00b0e8; }
+
+.hljs-emphasis {
+  font-style: italic; }
+
+.hljs-strong {
+  font-weight: bold; }
+
+/*# sourceMappingURL=parch-web.css.map */
